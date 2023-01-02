@@ -1,0 +1,26 @@
+import java.util.Scanner; //import the Scanner class
+
+public class Main {
+  public static void main(String[] args) {
+    //create a Scanner object to read input
+    Scanner input = new Scanner(System.in);
+    
+    //prompt the user to enter their surname
+    System.out.print("Enter your surname: ");
+    String surname = input.nextLine(); //read the surname as a string
+    
+    //prompt the user to enter their age
+    System.out.print("Enter your age: ");
+    int age = input.nextInt(); //read the age as an integer
+    
+    //print the number of characters in the surname
+    System.out.println("The number of characters in your surname is: " + surname.length());
+    
+    //check if the age is even or odd and print the result
+    if (age % 2 == 0) {
+      System.out.println("Your current age is an even number.");
+    } else {
+      System.out.println("Your current age is an odd number.");
+    }
+  }
+}
